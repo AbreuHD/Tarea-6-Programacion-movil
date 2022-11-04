@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Genero</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-item>
+    {{printGender}}
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Ingresa el nombre</ion-label>
+    <ion-input type="text" [(ngModel)]="genero"></ion-input>
+  </ion-item>
+
+  <ion-button expand="block" (click)="getGenero()">Genero</ion-button>
+
+  <ion-item>
+    <img [src]="img" alt="color">
+  </ion-item>
+</ion-content>
